@@ -125,8 +125,8 @@ def traverse(head):
 
     def find_all_df(node):
         final_list = check_contain_df(node)
-        if node.has_attr('class'):
-            print(node['class'])
+        # if node.has_attr('class'):
+        #     print(node['class'])
 
         if len(final_list) != 0:
             if node.has_attr('class'):

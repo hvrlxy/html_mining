@@ -2,20 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="079e996a-445a-4d16-a546-710f332f09f4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/test_cases/twitchdata.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_twitch.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/html-extract.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/extract.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/extract.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/traverse.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/traverse.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_stock.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_trails.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_wikidith.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_results/stocks.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/test_results/stocks.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_twitch.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_twitch.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

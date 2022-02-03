@@ -63,10 +63,8 @@ def convert_all_df(items_dict):
     '''
     df_dict = {}
     for name in items_dict.keys():
-        print(name)
         convert_df = convert_to_df(items_dict[name])
         if convert_df is not None:
-            print(name)
             df_dict[name] = convert_df
 
     return df_dict

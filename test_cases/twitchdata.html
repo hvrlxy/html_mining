@@ -1,0 +1,751 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Most Watched Games on Twitch, February 2022 · TwitchTracker</title>
+<meta name="description" content="Ranked by average concurrent viewers for the last 7 days, February 2022">
+<meta name="keywords" content="twitch, statistics, stream, channel, stats, games, subs, subscribers, clips, viewers, followers, views, shroud, ninja, drdisrespect, summit1g, lirik, dreadztv">
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3581129455196386" crossorigin="anonymous"></script>
+
+<script>
+        window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+        ga('create', 'UA-51794509-3', 'auto'); ga('send', 'pageview');
+    </script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.7/flatly/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.13/css/dataTables.bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/lity@2/dist/lity.min.css" rel="stylesheet">
+<link href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" rel="stylesheet">
+<link href="/css/master.css" rel="stylesheet">
+<script>e='#ffffff'</script>
+<meta name="theme-color" content="#ffffff">
+<link rel="icon" type="image/png" sizes="192x192" href="/img/ico/android-icon-192x192.png">
+<link rel="apple-touch-icon" href="/img/ico/apple-icon.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/img/ico/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/img/ico/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/img/ico/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/img/ico/apple-icon-180x180.png">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@twitchtracker_">
+
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="TwitchTracker">
+<meta property="og:url" content="https://twitchtracker.com/games">
+<meta property="og:title" content="Most Watched Games on Twitch, February 2022">
+<meta property="og:description" content="Ranked by average concurrent viewers for the last 7 days, February 2022">
+<meta property="og:image" content="https://twitchtracker.com/img/share-tt.png">
+<div id='fixedban' style='width:100%;margin:auto; text-align:center;float:none;overflow:hidden; display:scroll;position:fixed; bottom:0;z-index:9999999'>
+<div style='text-align:center;display:block;max-width:970px;height:auto;overflow:hidden;margin:auto'>
+<script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script>
+<script>  var gptadslots = [];
+          var googletag = googletag || {cmd:[]};</script>
+<script>  googletag.cmd.push(function() {
+            var responsiveads = googletag.sizeMapping()
+                   .addSize([0,0],[[320,50],[300,75],[300,50]])
+                   .addSize([730,200],[[728,90],[468,60]])
+                   .addSize([975,200],[[970,90],[728,90],[960,90],[750,100],[950,90],[468,60]])  .build();
+                                   gptadslots.push(googletag.defineSlot('/21849154601,21872144841/Ad.Plus-Anchor', [[320,100]], 'adplus-anchor')
+                                    .setTargeting('site', ['twitchtracker.com'])
+                                    .defineSizeMapping(responsiveads)
+                                    .addService(googletag.pubads()));
+                               googletag.enableServices();  }); </script>
+<div> <a id='close-fixedban' onclick='document.getElementById(&apos;fixedban&apos;).style.display = &apos;none&apos;;' style='cursor:pointer;'><img src="https://ad.plus/adplus-advertising.svg" alt="adplus-dvertising" title='Ad.Plus Advertising' style='vertical-align:middle;' /></a></div> <div id='adplus-anchor'>
+<script>   googletag.cmd.push(function() { googletag.display('adplus-anchor'); });  </script></div></div></div>
+<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js'></script></head>
+<body>
+<div id="main-nav" class="navbar navbar-default">
+<div class="container">
+<div class="navbar-header" style="float:left">
+<a href="/" class="navbar-brand">TwitchTracker</a>
+</div>
+<div class="navbar-header" style="float:right">
+<div class="navbar-static" id="timezone-switch" title="Switch time zone between local and UTC">
+<div>Time zone</div>
+<span></span>
+</div>
+<a class="navbar-static" id="sign-in-button" href="/u/login">
+<i class="fas fa-sign-in-alt fa-fw"></i>
+<span>SIGN IN</span>
+</a>
+<a class="navbar-static" id="menu-user-icon" href="/u/dashboard">
+<img>
+</a>
+<a class="navbar-static" id="invoke-main-search-form" href="#">
+<i class="fas fa-search fa-fw"></i>
+<span>SEARCH</span>
+</a>
+<button class="navbar-toggle navbar-static" type="button" data-toggle="collapse" data-target="#navbar-main">
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+</div>
+<div class="navbar-collapse collapse" id="navbar-main">
+<ul class="nav navbar-nav">
+<li>
+<a href="/channels/viewership">Channels</a>
+</li>
+<li>
+<a href="/games">Games</a>
+</li>
+<li>
+<a href="/clips">Clips</a>
+</li>
+<li class="dropdown">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#">Stats <span class="caret"></span></a>
+<ul class="dropdown-menu">
+<li><a href="/statistics">Overview</a></li>
+<li><a href="/statistics/viewers">Viewers</a></li>
+<li><a href="/statistics/channels">Channels</a></li>
+<li><a href="/statistics/active-streamers">Active Streamers</a></li>
+<li><a href="/statistics/watch-time">Watch Time</a></li>
+<li><a href="/statistics/stream-time">Stream Time</a></li>
+<li><a href="/statistics/games">Games</a></li>
+<li><a href="/languages">Languages</a></li>
+</ul>
+</li>
+<li>
+<a href="/subscribers">Subscribers</a>
+</li>
+</ul>
+</div>
+</div>
+<form class="search-form" id="main-search-form" action="/search">
+<div class="container">
+<input type="search" name="q" minlength="3" maxlength="100" required autocomplete="off" placeholder="channel or game">
+<button type="submit" class="fas fa-search"></button>
+</div>
+</form>
+</div>
+<div id="content-wrapper">
+<div style="background:#05101e;padding-top:10px;text-align:center">
+<script>
+                    var gptadslots = [];
+                    var googletag = googletag || {cmd:[]};
+                    googletag.cmd.push(function() {
+                        var responsiveads = googletag.sizeMapping()
+                            .addSize([0,0],[[320,100],[320,50],[300,100],[300,50]])
+                            .addSize([750,200],[[728,90]])
+                            .addSize([975,200],[[728,90],[980,90],[980,120],[980,150],[970,100],[970,120],[970,150],[300,100],[320,100]])
+                            .build();
+                        gptadslots.push(googletag.defineSlot('/21849154601,21872144841/Ad.Plus-AI-Responsive-2', [[980,120]], 'adplus-2')
+                            .defineSizeMapping(responsiveads)
+                            .addService(googletag.pubads()));
+                        googletag.pubads().setTargeting('site', ['twitchtracker.com']);
+                        googletag.enableServices();
+                    });
+                </script>
+<center><div id='adplus-2'><script>
+                    googletag.cmd.push(function() { googletag.display('adplus-2'); });
+                </script></div></center>
+</div>
+<div class="container ranked-list">
+<h2>Most Watched Games on Twitch</h2>
+<p class="text-center">Ranked by average concurrent viewers for the last 7 days, February 2022</p>
+<div id="ranked-lists-index" class="selectoid v0">
+<a href="/games/rating"><i class="fas fa-circle" data-index="rank"></i> Unified Rating</a>
+<a href="/games"><i class="fas fa-circle" data-index="avg_viewers"></i> Viewers</a>
+<a href="/games/average-channels"><i class="fas fa-circle" data-index="avg_channels"></i> Channels</a>
+<a href="/games/time-watched"><i class="fas fa-circle" data-index="man_hours"></i> Hours Watched</a>
+<a href="/games/live"><i class="fas fa-circle" data-index="viewers"></i> Live</a>
+<a href="/games/peak-viewers"><i class="fas fa-circle" data-index="max_viewers_all_time"></i> Peak Viewers</a>
+<a href="/games/peak-channels"><i class="fas fa-circle" data-index="max_channels_all_time"></i> Peak Channels</a>
+<a href="/games/to-stream"><i class="fas fa-circle" data-index="to_stream"></i> Games to Stream</a>
+<a href="/statistics/games" target="_blank"><i class="fas fa-fw fa-chart-line"></i> More Games Statistics</a>
+</div>
+<div class="ranked-item">
+<div class="ri-position hidden-xxs" title="Ranking Position">#1</div>
+<div class="ri-image">
+<img src="https://static-cdn.jtvnw.net/ttv-boxart/509658-90x120.jpg">
+</div>
+<div class="ri-name">
+<a href="/games/509658">Just Chatting</a>
+<div class="ri-scale" data-width="100"></div>
+</div>
+<div class="ri-value">
+<div class="to-number-lg">380688</div>
+</div>
+<div class="ri-change hidden-xs">
+<div>
+<span class="diff text-danger ">
+<i class="fas fa-caret-down"></i>&nbsp;<span class="to-number-lg">5.2</span>%
+</span>
+<br><small>change</small>
+</div>
+</div>
+<div class="ri-share hidden-xs">
+<div>
+12.999% <br><small>global share</small>
+</div>
+</div>
+</div>
+<div class="ranked-item">
+<div class="ri-position hidden-xxs" title="Ranking Position">#2</div>
+<div class="ri-image">
+<img src="https://static-cdn.jtvnw.net/ttv-boxart/21779-90x120.jpg">
+</div>
+<div class="ri-name">
+<a href="/games/21779">League of Legends</a>
+<div class="ri-scale" data-width="63.963"></div>
+</div>
+<div class="ri-value">
+<div class="to-number-lg">243499</div>
+</div>
+<div class="ri-change hidden-xs">
+<div>
+<span class="diff text-danger ">
+<i class="fas fa-caret-down"></i>&nbsp;<span class="to-number-lg">8.1</span>%
+</span>
+<br><small>change</small>
+</div>
+</div>
+<div class="ri-share hidden-xs">
+<div>
+8.315% <br><small>global share</small>
+</div>
+</div>
+</div>
+<div class="ranked-item">
+<div class="ri-position hidden-xxs" title="Ranking Position">#3</div>
+<div class="ri-image">
+<img src="https://static-cdn.jtvnw.net/ttv-boxart/32982-90x120.jpg">
+</div>
+<div class="ri-name">
+<a href="/games/32982">Grand Theft Auto V</a>
+<div class="ri-scale" data-width="53.683"></div>
+</div>
+<div class="ri-value">
+<div class="to-number-lg">204364</div>
+</div>
+<div class="ri-change hidden-xs">
+<div>
+<span class="diff text-danger ">
+<i class="fas fa-caret-down"></i>&nbsp;<span class="to-number-lg">8.4</span>%
+</span>
+<br><small>change</small>
+</div>
+</div>
+<div class="ri-share hidden-xs">
+<div>
+6.978% <br><small>global share</small>
+</div>
+</div>
+</div>
+<div class="ranked-item">
+<div class="ri-position hidden-xxs" title="Ranking Position">#4</div>
+<div class="ri-image">
+<img src="https://static-cdn.jtvnw.net/ttv-boxart/561013832-90x120.jpg">
+</div>
+<div class="ri-name">
+<a href="/games/561013832">Pokémon Legends: Arceus</a>
+<div class="ri-scale" data-width="34.426"></div>
+</div>
+<div class="ri-value">
+<div class="to-number-lg">131056</div>
+</div>
+<div class="ri-change hidden-xs">
+<div>
+<span class="diff text-success  ">
+<i class="fas fa-caret-up"></i>&nbsp;<span class="to-number-lg">19287</span>%
+</span>
+<br><small>change</small>
+</div>
+</div>
+<div class="ri-share hidden-xs">
+<div>
+4.475% <br><small>global share</small>
+</div>
+</div>
+</div>
+<div class="ranked-item">
+<div class="ri-position hidden-xxs" title="Ranking Position">#5</div>
+<div class="ri-image">
+<img src="https://static-cdn.jtvnw.net/ttv-boxart/516575-90x120.jpg">
+</div>
+<div class="ri-name">
+<a href="/games/516575">VALORANT</a>
+<div class="ri-scale" data-width="31.816"></div>
+</div>
+<div class="ri-value">
+<div class="to-number-lg">121118</div>
+</div>
+<div class="ri-change hidden-xs">
+<div>
+<span class="diff text-success  ">
+<i class="fas fa-caret-up"></i>&nbsp;<span class="to-number-lg">1.4</span>%
+</span>
+<br><small>change</small>
+</div>
+</div>
+<div class="ri-share hidden-xs">
+<div>
+4.136% <br><small>global share</small>
+</div>
+</div>
+</div>
+<div class="ranked-item">
+<div class="ri-position hidden-xxs" title="Ranking Position">#6</div>
+<div class="ri-image">
+<img src="https://static-cdn.jtvnw.net/ttv-boxart/33214-90x120.jpg">
+</div>
+<div class="ri-name">
+<a href="/games/33214">Fortnite</a>
+<div class="ri-scale" data-width="23.208"></div>
+</div>
+<div class="ri-value">
+<div class="to-number-lg">88349</div>
+</div>
+<div class="ri-change hidden-xs">
+<div>
+<span class="diff text-danger ">
+<i class="fas fa-caret-down"></i>&nbsp;<span class="to-number-lg">12.4</span>%
+</span>
+<br><small>change</small>
+</div>
+</div>
+<div class="ri-share hidden-xs">
+<div>
+3.017% <br><small>global share</small>
+</div>
+</div>
+</div>
+<div class="ranked-item">
+<div class="ri-position hidden-xxs" title="Ranking Position">#7</div>
+<div class="ri-image">
+<img src="https://static-cdn.jtvnw.net/ttv-boxart/511224-90x120.jpg">
+</div>
+<div class="ri-name">
+<a href="/games/511224">Apex Legends</a>
+<div class="ri-scale" data-width="23.193"></div>
+</div>
+<div class="ri-value">
+<div class="to-number-lg">88293</div>
+</div>
+<div class="ri-change hidden-xs">
+<div>
+<span class="diff text-danger ">
+<i class="fas fa-caret-down"></i>&nbsp;<span class="to-number-lg">5.8</span>%
+</span>
+<br><small>change</small>
+</div>
+</div>
+<div class="ri-share hidden-xs">
+<div>
+3.015% <br><small>global share</small>
+</div>
+</div>
+</div>
+<div class="ranked-item">
+<div class="ri-position hidden-xxs" title="Ranking Position">#8</div>
+<div class="ri-image">
+<img src="https://static-cdn.jtvnw.net/ttv-boxart/32399-90x120.jpg">
+</div>
+<div class="ri-name">
+<a href="/games/32399">Counter-Strike: Global Offensive</a>
+<div class="ri-scale" data-width="22.298"></div>
+</div>
+<div class="ri-value">
+<div class="to-number-lg">84884</div>
+</div>
+<div class="ri-change hidden-xs">
+<div>
+<span class="diff text-success  ">
+<i class="fas fa-caret-up"></i>&nbsp;<span class="to-number-lg">56.3</span>%
+</span>
+<br><small>change</small>
+</div>
+</div>
+<div class="ri-share hidden-xs">
+<div>
+2.899% <br><small>global share</small>
+</div>
+</div>
+</div>
+<div class="ranked-item">
+<div class="ri-position hidden-xxs" title="Ranking Position">#9</div>
+<div class="ri-image">
+<img src="https://static-cdn.jtvnw.net/ttv-boxart/27471-90x120.jpg">
+</div>
+<div class="ri-name">
+<a href="/games/27471">Minecraft</a>
+<div class="ri-scale" data-width="20.127"></div>
+</div>
+<div class="ri-value">
+<div class="to-number-lg">76622</div>
+</div>
+<div class="ri-change hidden-xs">
+<div>
+<span class="diff text-danger ">
+<i class="fas fa-caret-down"></i>&nbsp;<span class="to-number-lg">47.2</span>%
+</span>
+<br><small>change</small>
+</div>
+</div>
+<div class="ri-share hidden-xs">
+<div>
+2.616%  <br><small>global share</small>
+</div>
+</div>
+</div>
+<div class="ranked-item">
+<div class="ri-position hidden-xxs" title="Ranking Position">#10</div>
+<div class="ri-image">
+<img src="https://static-cdn.jtvnw.net/ttv-boxart/1869092879-90x120.jpg">
+</div>
+<div class="ri-name">
+<a href="/games/1869092879">FIFA 22</a>
+<div class="ri-scale" data-width="19.393"></div>
+</div>
+<div class="ri-value">
+<div class="to-number-lg">73827</div>
+</div>
+<div class="ri-change hidden-xs">
+<div>
+<span class="diff text-danger ">
+<i class="fas fa-caret-down"></i>&nbsp;<span class="to-number-lg">6.5</span>%
+</span>
+<br><small>change</small>
+</div>
+</div>
+<div class="ri-share hidden-xs">
+<div>
+2.521% <br><small>global share</small>
+</div>
+</div>
+</div>
+<div class="ranked-item">
+<div class="ri-position hidden-xxs" title="Ranking Position">#11</div>
+<div class="ri-image">
+<img src="https://static-cdn.jtvnw.net/ttv-boxart/491931-90x120.jpg">
+</div>
+<div class="ri-name">
+<a href="/games/491931">Escape from Tarkov</a>
+<div class="ri-scale" data-width="15.739"></div>
+</div>
+<div class="ri-value">
+<div class="to-number-lg">59915</div>
+</div>
+<div class="ri-change hidden-xs">
+<div>
+<span class="diff text-danger ">
+<i class="fas fa-caret-down"></i>&nbsp;<span class="to-number-lg">17.4</span>%
+</span>
+<br><small>change</small>
+</div>
+</div>
+<div class="ri-share hidden-xs">
+<div>
+2.046% <br><small>global share</small>
+</div>
+</div>
+</div>
+<div class="ranked-item">
+<div class="ri-position hidden-xxs" title="Ranking Position">#12</div>
+<div class="ri-image">
+<img src="https://static-cdn.jtvnw.net/ttv-boxart/512710-90x120.jpg">
+</div>
+<div class="ri-name">
+<a href="/games/512710">Call of Duty: Warzone</a>
+<div class="ri-scale" data-width="15.719"></div>
+</div>
+<div class="ri-value">
+<div class="to-number-lg">59841</div>
+</div>
+<div class="ri-change hidden-xs">
+<div>
+<span class="diff text-danger ">
+<i class="fas fa-caret-down"></i>&nbsp;<span class="to-number-lg">8.8</span>%
+</span>
+<br><small>change</small>
+</div>
+</div>
+<div class="ri-share hidden-xs">
+<div>
+2.043% <br><small>global share</small>
+</div>
+</div>
+</div>
+<div class="ranked-item">
+<div class="ri-position hidden-xxs" title="Ranking Position">#13</div>
+<div class="ri-image">
+<img src="https://static-cdn.jtvnw.net/ttv-boxart/29595-90x120.jpg">
+</div>
+<div class="ri-name">
+<a href="/games/29595">Dota 2</a>
+<div class="ri-scale" data-width="13.065"></div>
+</div>
+<div class="ri-value">
+ <div class="to-number-lg">49737</div>
+</div>
+<div class="ri-change hidden-xs">
+<div>
+<span class="diff text-danger ">
+<i class="fas fa-caret-down"></i>&nbsp;<span class="to-number-lg">17.6</span>%
+</span>
+<br><small>change</small>
+</div>
+</div>
+<div class="ri-share hidden-xs">
+<div>
+1.698% <br><small>global share</small>
+</div>
+</div>
+</div>
+<div class="ranked-item">
+<div class="ri-position hidden-xxs" title="Ranking Position">#14</div>
+<div class="ri-image">
+<img src="https://static-cdn.jtvnw.net/ttv-boxart/498566-90x120.jpg">
+</div>
+<div class="ri-name">
+<a href="/games/498566">Slots</a>
+<div class="ri-scale" data-width="12.321"></div>
+</div>
+<div class="ri-value">
+<div class="to-number-lg">46903</div>
+</div>
+<div class="ri-change hidden-xs">
+<div>
+<span class="diff text-success  ">
+<i class="fas fa-caret-up"></i>&nbsp;<span class="to-number-lg">9.4</span>%
+</span>
+<br><small>change</small>
+</div>
+</div>
+<div class="ri-share hidden-xs">
+<div>
+1.602% <br><small>global share</small>
+</div>
+</div>
+</div>
+<div class="ranked-item">
+<div class="ri-position hidden-xxs" title="Ranking Position">#15</div>
+<div class="ri-image">
+<img src="https://static-cdn.jtvnw.net/ttv-boxart/138585-90x120.jpg">
+</div>
+<div class="ri-name">
+<a href="/games/138585">Hearthstone</a>
+<div class="ri-scale" data-width="9.68"></div>
+</div>
+<div class="ri-value">
+<div class="to-number-lg">36850</div>
+</div>
+<div class="ri-change hidden-xs">
+<div>
+<span class="diff text-danger ">
+<i class="fas fa-caret-down"></i>&nbsp;<span class="to-number-lg">0.2</span>%
+</span>
+<br><small>change</small>
+</div>
+</div>
+<div class="ri-share hidden-xs">
+<div>
+1.258% <br><small>global share</small>
+</div>
+</div>
+</div>
+<div class="ranked-item">
+<div class="ri-position hidden-xxs" title="Ranking Position">#16</div>
+<div class="ri-image">
+<img src="https://static-cdn.jtvnw.net/ttv-boxart/18122-90x120.jpg">
+</div>
+<div class="ri-name">
+<a href="/games/18122">World of Warcraft</a>
+<div class="ri-scale" data-width="9.179"></div>
+</div>
+<div class="ri-value">
+<div class="to-number-lg">34944</div>
+</div>
+<div class="ri-change hidden-xs">
+<div>
+<span class="diff text-success  ">
+<i class="fas fa-caret-up"></i>&nbsp;<span class="to-number-lg">9.4</span>%
+</span>
+<br><small>change</small>
+</div>
+</div>
+<div class="ri-share hidden-xs">
+<div>
+1.193% <br><small>global share</small>
+</div>
+</div>
+</div>
+ <div class="ranked-item">
+<div class="ri-position hidden-xxs" title="Ranking Position">#17</div>
+<div class="ri-image">
+<img src="https://static-cdn.jtvnw.net/ttv-boxart/30921-90x120.jpg">
+</div>
+<div class="ri-name">
+<a href="/games/30921">Rocket League</a>
+<div class="ri-scale" data-width="8.717"></div>
+</div>
+<div class="ri-value">
+<div class="to-number-lg">33186</div>
+</div>
+<div class="ri-change hidden-xs">
+<div>
+<span class="diff text-success  ">
+<i class="fas fa-caret-up"></i>&nbsp;<span class="to-number-lg">66.7</span>%
+</span>
+<br><small>change</small>
+</div>
+</div>
+<div class="ri-share hidden-xs">
+<div>
+1.133% <br><small>global share</small>
+</div>
+</div>
+</div>
+<div class="ranked-item">
+<div class="ri-position hidden-xxs" title="Ranking Position">#18</div>
+<div class="ri-image">
+<img src="https://static-cdn.jtvnw.net/ttv-boxart/26936-90x120.jpg">
+</div>
+<div class="ri-name">
+<a href="/games/26936">Music</a>
+<div class="ri-scale" data-width="8.553"></div>
+</div>
+<div class="ri-value">
+<div class="to-number-lg">32559</div>
+</div>
+<div class="ri-change hidden-xs">
+<div>
+<span class="diff text-danger ">
+<i class="fas fa-caret-down"></i>&nbsp;<span class="to-number-lg">13.2</span>%
+</span>
+<br><small>change</small>
+</div>
+</div>
+<div class="ri-share hidden-xs">
+<div>
+1.112% <br><small>global share</small>
+</div>
+</div>
+</div>
+<div class="ranked-item">
+<div class="ri-position hidden-xxs" title="Ranking Position">#19</div>
+<div class="ri-image">
+<img src="https://static-cdn.jtvnw.net/ttv-boxart/491487-90x120.jpg">
+</div>
+<div class="ri-name">
+<a href="/games/491487">Dead by Daylight</a>
+<div class="ri-scale" data-width="8.318"></div>
+</div>
+<div class="ri-value">
+<div class="to-number-lg">31667</div>
+</div>
+<div class="ri-change hidden-xs">
+<div>
+<span class="diff text-success  ">
+<i class="fas fa-caret-up"></i>&nbsp;<span class="to-number-lg">4.1</span>%
+</span>
+<br><small>change</small>
+</div>
+</div>
+<div class="ri-share hidden-xs">
+<div>
+1.081% <br><small>global share</small>
+</div>
+</div>
+</div>
+<div class="ranked-item">
+<div class="ri-position hidden-xxs" title="Ranking Position">#20</div>
+<div class="ri-image">
+<img src="https://static-cdn.jtvnw.net/ttv-boxart/513143-90x120.jpg">
+</div>
+<div class="ri-name">
+<a href="/games/513143">Teamfight Tactics</a>
+<div class="ri-scale" data-width="7.037"></div>
+</div>
+<div class="ri-value">
+<div class="to-number-lg">26788</div>
+</div>
+<div class="ri-change hidden-xs">
+ <div>
+<span class="diff text-danger ">
+<i class="fas fa-caret-down"></i>&nbsp;<span class="to-number-lg">15.6</span>%
+</span>
+<br><small>change</small>
+</div>
+</div>
+<div class="ri-share hidden-xs">
+<div>
+0.915% <br><small>global share</small>
+</div>
+</div>
+</div>
+<div class="text-center">
+<ul class="pagination pagination-complex" role="navigation">
+<li class="disabled hidden-xs" aria-disabled="true">
+<span><i class="fas fa-arrow-alt-circle-left fa-fw"></i> PREV</span>
+</li>
+<li class="active" aria-current="page"><span>1</span></li>
+<li><a href="https://twitchtracker.com/games?page=2">2</a></li>
+<li><a href="https://twitchtracker.com/games?page=3">3</a></li>
+<li><a href="https://twitchtracker.com/games?page=4">4</a></li>
+<li><a href="https://twitchtracker.com/games?page=5">5</a></li>
+<li><a href="https://twitchtracker.com/games?page=6">6</a></li>
+<li><a href="https://twitchtracker.com/games?page=7">7</a></li>
+<li><a href="https://twitchtracker.com/games?page=8">8</a></li>
+<li><a href="https://twitchtracker.com/games?page=9">9</a></li>
+<li><a href="https://twitchtracker.com/games?page=10">10</a></li>
+<li class="disabled" aria-disabled="true"><span>·</span></li>
+<li><a href="https://twitchtracker.com/games?page=239">239</a></li>
+<li><a href="https://twitchtracker.com/games?page=240">240</a></li>
+<li class="hidden-xs">
+<a href="https://twitchtracker.com/games?page=2" rel="next">
+NEXT <i class="fas fa-arrow-alt-circle-right fa-fw"></i>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<meta id="ecs" content="ImF2Z192a#V3ZXJzIg!#yJpbmRleCJd">
+<div class="bg-dark" style="padding:20px 0 10px;text-align:center">
+
+<ins class="adsbygoogle" style="display:inline-block;min-width:360px; max-width:970px; width:100%; height: 250px" data-ad-format="auto" data-full-width-responsive="true" data-ad-client="ca-pub-3581129455196386" data-ad-slot="6664111937"></ins>
+<script>
+             (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+</div>
+<footer class="bg-dark" style="padding-bottom: 120px;">
+<div class="container">
+<p>Get in touch, report a bug or incorrect information, suggest a feature.</p>
+<ul class="list-inline">
+<li>TwitchTracker © 2021</li>
+<li><a href="/cdn-cgi/l/email-protection#9bf8f4f5effaf8efdbefecf2eff8f3efe9faf8f0fee9b5f8f4f6"><span class="__cf_email__" data-cfemail="53303c3d273230271327243a27303b272132303836217d303c3e">[email&#160;protected]</span></a></li>
+
+</ul>
+<p>
+<span style="opacity:.333">Scraping is prohibited, it overloads the servers.</span>
+<a href="/api">Use this instead</a>
+</p>
+<p>TwitchTracker is not affiliated with Twitch or Amazon. All Trademarks referred to are the property of their respective owners.</p>
+</div>
+</footer>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lodash@4/lodash.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.13.0/moment.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.13/js/jquery.dataTables.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.13/js/dataTables.bootstrap.min.js"></script>
+<script src="https://unpkg.com/highcharts@9/highcharts.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lity@2/dist/lity.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+
+<div data-tc="WyIyZWppNGR6dHMwcHB3d3Bwcnh3bmFvOWQyN3Nmd3oiLCJsY2g2dG8wZmNmbGtmbTVtMXoxdzBtNmJjMm44eXgiXQ"></div>
+<script src="/js/master.js"></script>
+<script src="/js/pages/games.js"></script>
+<script type="text/javascript">(function(){window['__CF$cv$params']={r:'6d7d486b1d2883c9',m:'DtpqTiXnqWHqa3hXM0qIsy29IndYT8Jea6yw5Gz19AE-1643908333-0-ASz+QlowRg+sgcL4dCiCkCYXgIJG+5Sc2GW90HNPR4nywuajMenGUWqN3SSLB2O1h41JJ061vEjkoGCuZfwp9LL40H/mogwQeVqYOgvE1Aua+LTXwc443necSqUkS56hLg==',s:[0x90993d5b05,0x00b128e8c7],u:'/cdn-cgi/challenge-platform/h/g'}})();</script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194" integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==" data-cf-beacon='{"rayId":"6d7d486b1d2883c9","version":"2021.12.0","r":1,"token":"d8628ec49fc643f0b22affc6c63db38b","si":100}' crossorigin="anonymous"></script>
+</body>
+</html>

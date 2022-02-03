@@ -80,7 +80,6 @@ def check_contain_df(node):
     children = node.contents
     children = [child for child in children if child != '\n']
     final_list = []
-    # print(children)
     if len(children) < 2:
         return []
     starting = children[0]
@@ -125,10 +124,9 @@ def traverse(head):
     items_dict = {}
 
     def find_all_df(node):
+        final_list = check_contain_df(node)
         if node.has_attr('class'):
             print(node['class'])
-        final_list = check_contain_df(node)
-        print(len(final_list))
 
         if len(final_list) != 0:
             if node.has_attr('class'):

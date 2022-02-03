@@ -1,5 +1,3 @@
-import requests
-from bs4 import BeautifulSoup
 import bs4
 from bs4 import Comment
 
@@ -28,6 +26,12 @@ def print_children(node):
         print(child.name)
 
 def compare_node_structure(node1, node2):
+    '''
+    given two soup nodes, return whether they have the same node structure
+    :param node1: a soup node
+    :param node2: a soup node
+    :return: true or false
+    '''
     if node1 == '\n' and node2 == '\n':
         return True
     if isinstance(node1, bs4.element.NavigableString) and isinstance(node2, bs4.element.NavigableString):
@@ -53,6 +57,11 @@ def compare_node_structure(node1, node2):
     return True
 
 def check_contain_info(node):
+    '''
+    check if a html tag contain any useful data (navigable string)
+    :param node: a soup node
+    :return: true or false
+    '''
     if node.string is not None:
         return True
     children = [child for child in node.contents if child.name is not None and child.name != '\n']
@@ -63,6 +72,11 @@ def check_contain_info(node):
 
 
 def check_contain_df(node):
+    '''
+    Given a soup tree node, check if it or its subtree contains any valuable data
+    :param node: a soup node
+    :return: list of data
+    '''
     children = node.contents
     children = [child for child in children if child != '\n']
     final_list = []
@@ -86,6 +100,12 @@ def check_contain_df(node):
     return final_list
 
 def find_keys_name(strings_dict, orig_name):
+    '''
+    Given a dictionary consists of df name available, return the appropriate name for the df
+    :param strings_dict: dictionary consist of df name and content
+    :param orig_name: the original name given by the traversal
+    :return: a new name for the df
+    '''
     if orig_name not in strings_dict.keys():
         return orig_name
     count = 1
@@ -96,6 +116,12 @@ def find_keys_name(strings_dict, orig_name):
     return name
 
 def traverse(head):
+    '''
+    traverse the tree, find all dataframe available and return a dictionary of the df name
+    and its content
+    :param head: soup tree node
+    :return: a dictionary of df name - df content
+    '''
     items_dict = {}
 
     def find_all_df(node):

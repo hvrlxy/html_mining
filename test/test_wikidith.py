@@ -1,8 +1,9 @@
 # This is a sample Python script.
-from main.parse import *
-from main.traverse import *
-from tabulate import tabulate
-from main.extract import *
+import sys
+sys.path.append('../src')
+from src.parse import *
+from src.traverse import *
+from src.extract import *
 # Press ⌃R to execute it or replace it with your code.
 # Press Double ⇧ to search everywhere for classes, files, tool windows, actions, and settings.
 
@@ -12,12 +13,6 @@ tree = get_tree(get_html(sample_html))
 
 # print_children(tree)
 items = tree.find_all(class_ = 'book-item')
-#test the compare subtree function
-# print(compare_node_structure(items[0], items[2]))
-
-#check the contain data function
-# nodes = tree.find_all(class_ = 'book-list')
-# print(len(check_contain_df(nodes[0])))
 
 #check the find all df function
 list_df = traverse(tree)
@@ -32,4 +27,4 @@ df_dict = convert_all_df(list_df)
 # print(tabulate(df_dict['book-list'], headers='keys', tablefmt='psql'))
 
 #test convert to excel function
-convert_to_excel(df_dict, './test_results/wikidth.xlsx')
+convert_to_excel(df_dict, '../test_results/wikidth.xlsx')

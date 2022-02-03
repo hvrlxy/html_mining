@@ -43,5 +43,76 @@ This function will export the data into an excel file of our choice, with each d
 ## Examples
 There are different examples available in this repo. This program works well with well-formatted html file, and was able to retrieve most of the table-based data available in a webpage.
 
+One noticable example of the use of this program is retrieving the information from this url: https://money.cnn.com/data/markets. The code for the below program can be found in the file test_stock.py
+
+```
+from src import *
+
+sample_html = 'https://money.cnn.com/data/markets'
+
+web_data = webmine(
+    url_path=sample_html,
+    source_code=None
+)
+
+web_data.print_all_df()
+```
+
+The program was able to print out all the tables available on the webpage, with some trouble finding the correct columns/tables' names;
+```
+three-equal-columnswsod
++----+---------------+----------------------+-----------------+------------------------+
+|    | ticker-name   | ticker-name-change   | ticker-points   |   ticker-points-change |
+|----+---------------+----------------------+-----------------+------------------------|
+|  0 | Dow           | -0.75%               | 35,362.70       |                -266.63 |
+|  1 | Nasdaq        | -2.21%               | 14,098.39       |                -319.15 |
+|  2 | S&P           | -1.39%               | 4,525.76        |                 -63.62 |
+|  3 | Dow           | -0.75%               | 35,362.70       |                -266.63 |
++----+---------------+----------------------+-----------------+------------------------+
+module-bodywsodmost-popular-stocks
++----+----------------------------+-----------+-----------+
+|    | column                     | column1   | column2   |
+|----+----------------------------+-----------+-----------|
+|  0 | Twitter Inc                | 34.43     | -5.70%    |
+|  1 | Ford Motor Co              | 20.15     | -2.33%    |
+|  2 | Chipotle Mexican Grill Inc | 1,443.97  | -2.73%    |
+|  3 | Exxon Mobil Corp           | 79.33     | -1.60%    |
+|  4 | Visa Inc                   | 231.85    | -1.52%    |
+|  5 | Twitter Inc                | 34.43     | -5.70%    |
++----+----------------------------+-----------+-----------+
+module-bodywsodgainers
++----+---------------------------+-----------+----------+
+|    | column                    | column1   |   hidden |
+|----+---------------------------+-----------+----------|
+|  0 | FedEx Corp                | +6.10%    |        0 |
+|  1 | Occidental Petroleum Corp | +5.56%    |        0 |
+|  2 | Dollar General Corp       | +5.02%    |        0 |
+|  3 | Best Buy Co Inc           | +4.24%    |        0 |
+|  4 | Marathon Oil Corp         | +3.18%    |        0 |
+|  5 | FedEx Corp                | +6.10%    |        0 |
++----+---------------------------+-----------+----------+
+module-bodywsodlosers
++----+-----------------------+-----------+----------+
+|    | column                | column1   |   hidden |
+|----+-----------------------+-----------+----------|
+|  0 | Xylem Inc             | -10.53%   |        0 |
+|  1 | Salesforce.Com Inc    | -6.24%    |        0 |
+|  2 | Twitter Inc           | -6.04%    |        0 |
+|  3 | Epam Systems Inc      | -5.23%    |        0 |
+|  4 | Lincoln National Corp | -5.16%    |        0 |
+|  5 | Xylem Inc             | -10.53%   |        0 |
++----+-----------------------+-----------+----------+
+module-bodywsodcurrencies
++----+-----------------+-----------+
+|    | column          | column1   |
+|----+-----------------+-----------|
+|  0 | British Pound   | $1.36     |
+|  1 | Japanese Yen    | ¥0.01     |
+|  2 | Canadian Dollar | $0.79     |
+|  3 | Chinese Yuan    | ¥0.16     |
+|  4 | Euro            | $1.13     |
++----+-----------------+-----------+
+```
+
 ## Drawbacks and Future Works
 The program still have problem with retrieving the correct table/column names, and I am researching intensively on how to incorporate other methods into this program. The program also has problem with ill-formatted html codes, and I am working on improving accuracies in those edge cases.
